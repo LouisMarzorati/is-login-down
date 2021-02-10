@@ -46,6 +46,21 @@
   text-decoration: underline;
 }
 
+.envSection {
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border: .5px solid #fafafa;
+    border-radius: 1rem;
+    padding: 2rem;
+    height: 5rem;
+    margin: 1rem;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    font-size: 2rem;
+}
+
+
 .title {
   margin: 0;
   line-height: 1.15;
@@ -54,12 +69,10 @@
 
 .yes {
   color: red;
-  font-size: 3rem;
 }
 
 .no {
   color: green;
-  font-size: 3rem;
 }
 
 .title,

@@ -13,13 +13,33 @@ export default function Home() {
           Is login down?
         </h1>
 
-        <div>
+        <div className={styles.envSection}>
+          <h2>
+            Dev
+          </h2>
+            
             {process.env.NEXT_PUBLIC_IS_DOWN && 
               <h2 className={styles.yes}>
                 Yes
               </h2>
             }
             {!process.env.NEXT_PUBLIC_IS_DOWN && 
+              <h2 className={styles.no}>
+                No
+              </h2>
+            }
+        </div>
+
+        <div className={styles.envSection}>
+          <h2>
+            Test
+          </h2>
+            {process.env.NEXT_PUBLIC_IS_DOWN_TEST && 
+              <h2 className={styles.yes}>
+                Yes
+              </h2>
+            }
+            {!process.env.NEXT_PUBLIC_IS_DOWN_TEST && 
               <h2 className={styles.no}>
                 No
               </h2>
