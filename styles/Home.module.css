@@ -52,6 +52,16 @@
   font-size: 4rem;
 }
 
+.yes {
+  color: red;
+  font-size: 3rem;
+}
+
+.no {
+  color: green;
+  font-size: 3rem;
+}
+
 .title,
 .description {
   text-align: center;
