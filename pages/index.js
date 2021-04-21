@@ -15,15 +15,15 @@ export default function Home() {
 
         <div className={styles.envSection}>
           <h2>
-            Dev
+            Dev (irrelevant until test is down)
           </h2>
-            
-            {process.env.NEXT_PUBLIC_IS_DOWN && 
+
+            {process.env.NEXT_PUBLIC_IS_DOWN &&
               <h2 className={styles.yes}>
                 Yes
               </h2>
             }
-            {!process.env.NEXT_PUBLIC_IS_DOWN && 
+            {!process.env.NEXT_PUBLIC_IS_DOWN &&
               <h2 className={styles.no}>
                 No
               </h2>
@@ -32,18 +32,26 @@ export default function Home() {
 
         <div className={styles.envSection}>
           <h2>
-            Test
+            Test (irrelevant because it's non-prod)
           </h2>
-            {process.env.NEXT_PUBLIC_IS_DOWN_TEST && 
+            {process.env.NEXT_PUBLIC_IS_DOWN_TEST &&
               <h2 className={styles.yes}>
                 Yes
               </h2>
             }
-            {!process.env.NEXT_PUBLIC_IS_DOWN_TEST && 
+            {!process.env.NEXT_PUBLIC_IS_DOWN_TEST &&
               <h2 className={styles.no}>
                 No
               </h2>
             }
+        </div>
+        <div className={styles.envSection}>
+          <h2>
+            Prod (we accept full responsibility yet 0 control)
+          </h2>
+              <h2 className={styles.no}>
+                You better fukin hope not, code monkey
+              </h2>
         </div>
       </main>
 
